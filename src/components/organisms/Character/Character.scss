@@ -1,0 +1,8 @@
+.m-cardhome{
+    display: grid;
+    gap:30px;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-rows: repeat(auto-fit, 300px);
+    justify-content: center;
+    margin: 50px;
+}

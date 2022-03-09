@@ -1,0 +1,21 @@
+.a-btnlove {
+    position: relative;
+    background: #97ce4c;
+    color: white;
+    border:none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        font-size: 20px;
+        transition: all .4s ease-in-out
+    }
+}
+
+
+  

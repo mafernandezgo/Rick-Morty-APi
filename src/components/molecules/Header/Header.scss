@@ -1,0 +1,52 @@
+.m-header {
+    background-color: rgba($color: #fcf8f8, $alpha:.4);
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin-bottom: 25px;
+    align-items: center;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+    &-logoapp {
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        img {
+            height: 25px;
+        }
+    }
+
+    &-logoright {
+        height: 20px;
+        margin-top: 10px;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.--rotate {
+    height: 10vmin;
+    pointer-events: none;
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+    .--rotate {
+        animation: --rotate-spin infinite 20s linear;
+    }
+}
+
+@keyframes --rotate-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
